@@ -48,6 +48,7 @@
      <Compile Include="Assets\_Scripts\BackgroundController.cs" />
      <Compile Include="Assets\_Scripts\CoinController.cs" />
      <Compile Include="Assets\_Scripts\PlaneController.cs" />
+     <Compile Include="Assets\_Scripts\RocketController.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
