@@ -3,8 +3,8 @@ using System.Collections;
 
 public class RocketController : MonoBehaviour {
 	// PUBLOC INSTANCE VARIABLES
-	public float minHorizontalSpeed = 7f;
-	public float maxHorizontalSpeed = 11f; 
+	public float minHorizontalSpeed = 6f;
+	public float maxHorizontalSpeed = 10f; 
 	public float minVerticalSpeed = -2f;
 	public float maxVerticalSpeed = 2f;
 
