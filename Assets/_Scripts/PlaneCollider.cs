@@ -29,6 +29,7 @@ public class PlaneCollider : MonoBehaviour {
 		if(other.gameObject.CompareTag("Coin")) {
 			this._coinSound.Play ();
 			this.gameController.ScoreValue += 100;
+		//	this.gameController.coin.gameObject.SetActive (false);
 		}
 		// detect collision with rocket object, play rocket sound if happened and deduct 1 live 
 		if (other.gameObject.CompareTag ("Rocket")) {
