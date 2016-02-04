@@ -1,4 +1,17 @@
-﻿using UnityEngine;
+﻿// ********************************************
+// * Source file : GameController.cs          *
+// * Author name : Yaroslav Kabanov           *
+// * Last Modified by : Yaroslav Kabanov      *
+// * Last Date Modified : February 4th, 2016  *
+// * Program Description : Here is side       *
+// *   scrolling 2D game where you need to    *
+// *   avoid rockets and collect coins to get *
+// *   score points. Get as much as you can   *
+// *   and survive.                           *
+// * Version: 1.0                             *
+// ********************************************
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -97,6 +110,5 @@ public class GameController : MonoBehaviour {
 
 	public void RestartButtonClick () {
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
-	 
 	}
 }

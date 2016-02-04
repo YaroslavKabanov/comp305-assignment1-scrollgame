@@ -32,7 +32,7 @@ public class RocketController : MonoBehaviour {
 			this.Reset ();
 		}
 	}
-
+	// making "new" rockets, reseting existing objects to new random positions
 	public void Reset ()
 	{
 		this._horizontalSpeed = Random.Range (this.minHorizontalSpeed, this.maxHorizontalSpeed);

@@ -2,9 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/GameController.cs">
     <Files>
-      <File FileName="Assets/_Scripts/GameController.cs" Line="101" Column="3" />
-      <File FileName="Assets/_Scripts/PlaneCollider.cs" Line="1" Column="1" />
-      <File FileName="Assets/_Scripts/PlaneController.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/GameController.cs" Line="10" Column="48" />
+      <File FileName="Assets/_Scripts/PlaneCollider.cs" Line="33" Column="91" />
+      <File FileName="Assets/_Scripts/PlaneController.cs" Line="38" Column="2" />
+      <File FileName="Assets/_Scripts/GameControllerStart.cs" Line="17" Column="52" />
+      <File FileName="Assets/_Scripts/RocketController.cs" Line="35" Column="76" />
+      <File FileName="Assets/_Scripts/BackgroundController.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/CoinController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

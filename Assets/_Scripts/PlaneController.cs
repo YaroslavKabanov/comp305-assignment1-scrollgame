@@ -40,8 +40,8 @@ public class PlaneController : MonoBehaviour {
 
 	// PRIVATE METHODS +++++
 
+	// keep the plain inside the camera view
 	private void _checkBorders () {
-		// keep the plain inside the camera view
 		if(this._currentPosition.y < -208) {
 			this._currentPosition.y = -208;
 		}

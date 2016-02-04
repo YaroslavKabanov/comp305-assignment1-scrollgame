@@ -24,13 +24,13 @@ public class PlaneCollider : MonoBehaviour {
 	void Update () {
 	
 	}
-
+		// detect collision with coin object, play sound if happened and add 100 score points
 	public void OnTriggerEnter2D(Collider2D other) {
 		if(other.gameObject.CompareTag("Coin")) {
 			this._coinSound.Play ();
 			this.gameController.ScoreValue += 100;
 		}
-
+		// detect collision with rocket object, play rocket sound if happened and deduct 1 live 
 		if (other.gameObject.CompareTag ("Rocket")) {
 			this._rocketSound.Play ();
 			this.gameController.LivesValue -= 1;
