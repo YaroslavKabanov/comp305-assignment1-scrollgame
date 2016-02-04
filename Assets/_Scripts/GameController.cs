@@ -50,6 +50,7 @@ public class GameController : MonoBehaviour {
 	public Text GameOverLabel;
 	public Text ScoreGainedLabel;
 	public Button RestartButton;
+	public Image gameOverImage;
 
 	// Use this for initialization
 	void Start () {
@@ -69,9 +70,10 @@ public class GameController : MonoBehaviour {
 	private void _initialize() {
 		this.ScoreValue = 0;
 		this.LivesValue = 3;
-		this.GameOverLabel.gameObject.SetActive (false); 
+	//	this.GameOverLabel.gameObject.SetActive (false); 
 		this.ScoreGainedLabel.gameObject.SetActive (false); 
 		this.RestartButton.gameObject.SetActive (false);
+		this.gameOverImage.gameObject.SetActive (false);
 
 
 		for (int rocketCount = 0; rocketCount < this.rocketNumber; rocketCount++) {
@@ -81,7 +83,8 @@ public class GameController : MonoBehaviour {
 		private void _gameOver () {
 		this.ScoreGainedLabel.gameObject.SetActive (true);
 		this.ScoreGainedLabel.text = "Your score : " + this._scoreValue;
-		this.GameOverLabel.gameObject.SetActive(true);
+	//	this.GameOverLabel.gameObject.SetActive(true);
+		this.gameOverImage.gameObject.SetActive (true);
 		this.LivesLabel.gameObject.SetActive (false);
 		this.ScoreLabel.gameObject.SetActive (false);
 		this.plane.gameObject.SetActive (false);
