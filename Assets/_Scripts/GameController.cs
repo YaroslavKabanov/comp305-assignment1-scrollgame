@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
@@ -15,7 +16,7 @@ public class GameController : MonoBehaviour {
 
 		set {
 			this._scoreValue = value;
-			Debug.Log (this._scoreValue);
+			this.ScoreLabel.text = "Score: " + this._scoreValue;
 		}
 	}
 
@@ -26,13 +27,15 @@ public class GameController : MonoBehaviour {
 
 		set {
 			this._livesValue = value;
-			Debug.Log (this._livesValue);
+			this.LivesLabel.text = "Lives: " + this._livesValue;
 		}
 	}
 
 	//PUBLIC INSTANCE VARIABLES
 	public int rocketNumber = 2;
 	public RocketController rocket;
+	public Text LivesLabel;
+	public Text ScoreLabel;
 
 	// Use this for initialization
 	void Start () {
