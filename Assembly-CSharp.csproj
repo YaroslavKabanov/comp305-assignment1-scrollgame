@@ -48,6 +48,7 @@
      <Compile Include="Assets\_Scripts\BackgroundController.cs" />
      <Compile Include="Assets\_Scripts\CoinController.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
+     <Compile Include="Assets\_Scripts\PlaneCollider.cs" />
      <Compile Include="Assets\_Scripts\PlaneController.cs" />
      <Compile Include="Assets\_Scripts\RocketController.cs" />
  <Reference Include="UnityEngine.Networking">
