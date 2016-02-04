@@ -7,6 +7,10 @@ public class PlaneCollider : MonoBehaviour {
 	private AudioSource _coinSound;
 	private AudioSource _rocketSound;
 
+	// public instance variables 
+
+	public GameController gameController;
+
 
 	// Use this for initialization
 	void Start () {
@@ -24,10 +28,12 @@ public class PlaneCollider : MonoBehaviour {
 	public void OnTriggerEnter2D(Collider2D other) {
 		if(other.gameObject.CompareTag("Coin")) {
 			this._coinSound.Play ();
+			this.gameController.ScoreValue += 100;
 		}
 
 		if (other.gameObject.CompareTag ("Rocket")) {
 			this._rocketSound.Play ();
+			this.gameController.LivesValue -= 1;
 		}
 	}
 }
